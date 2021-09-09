@@ -19,11 +19,11 @@
         </footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
         <script>
-            var alternativas = ["fruta", "animal", "comida", "cosa"];
+            var alternativas = ["fruta", "mascota", "comida", "cosa"];
             function setup() {
                 var lugar = select("footer");
                 var alternativa = random(alternativas);
-                createA("page.html"+"?dibuja="+alternativa, "Dibuja tu " + alternativa + " favorito/a").parent(lugar);
+                createA("page.html"+"?dibuja="+alternativa, "Dibuja tu " + alternativa + " favorita").parent(lugar);
                 noCanvas();
             }
         </script>
